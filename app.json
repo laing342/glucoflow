@@ -1,0 +1,38 @@
+﻿{
+    "expo":  {
+                 "name":  "GlucoFlow",
+                 "slug":  "glucoflow",
+                 "version":  "1.0.0",
+                 "orientation":  "portrait",
+                 "icon":  "./assets/icon.png",
+                 "userInterfaceStyle":  "light",
+                 "ios":  {
+                             "supportsTablet":  true,
+                             "bundleIdentifier":  "com.glucoflow.app",
+                             "infoPlist":  {
+                                               "NSCameraUsageDescription":  "GlucoFlow uses camera to capture meal photos",
+                                               "NSHealthShareUsageDescription":  "GlucoFlow reads health data to track your blood glucose",
+                                               "NSHealthUpdateUsageDescription":  "GlucoFlow saves blood glucose readings to Health app"
+                                           }
+                         },
+                 "android":  {
+                                 "package":  "com.glucoflow.app"
+                             },
+                 "web":  {
+                             "bundler":  "metro",
+                             "output":  "single",
+                             "favicon":  "./assets/icon.png",
+                             "shortName":  "GlucoFlow",
+                             "backgroundColor":  "#0EA5E9",
+                             "themeColor":  "#0EA5E9",
+                             "description":  "智能血糖管理平台",
+                             "lang":  "zh-CN",
+                             "display":  "standalone",
+                             "orientation":  "portrait"
+                         },
+                 "plugins":  [
+                                 "expo-router"
+                             ],
+                 "scheme":  "glucoflow"
+             }
+}
